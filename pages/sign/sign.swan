@@ -1,0 +1,36 @@
+<view class="logo_img"></view>
+<view class="wrap clearBoth">
+    <view class="sign_list float_right">
+        <view class="sign_list_title">活动报名环节内容介绍</view>
+        <view class="list clearBoth" s-for="item in list">
+            <view class="list_top" data-id="{{item['id']}}" data-type="{{item['activity_type']}}" bindtap="toList"></view>
+            <view class="float_left">{{item['title']}}</view>
+            <view class="float_right">></view>
+        </view>
+    </view>
+</view>
+<view class="zhifu_wrap">
+    <view class="zhifu_title">支付方式</view>
+    <view class="zhifu clearBoth">
+        <view class="wx float_left">
+            <view class="zhufuicon_wrap">
+                <image class="zhifu_icon" src="../../images/wx.png"></image>
+            </view>
+            <view class="zhifu_wenzi">微信支付</view>
+            <view class="wx_m_wrap">
+                <view class="fukuan">请用微信扫码付款</view>
+                <view class="fukuan_border">微信扫码，快捷付款</view>
+            </view>
+        </view>
+        <!-- <view class="zfb float_right">
+            <view class="zhufuicon_wrap">
+                <image class="zhifu_icon" src="../../images/zfb.png"></image>
+            </view>
+            <view class="zhifu_wenzi">支付宝支付</view>
+            <view class="zfb_m_wrap">
+                <view class="fukuan">请用支付宝扫码付款</view>
+                <view class="fukuan_border">支付宝扫码，快捷付款</view>
+            </view>
+        </view> -->
+    </view>
+</view>

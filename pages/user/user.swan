@@ -1,0 +1,71 @@
+<view class="user">
+    <image class="baocun" bindtap="baocun" src="../../images/baocun.png"></image>
+    <view class="user_img_wrap">
+        <image class="user_img" src="{{user.pic}}" bindtap="chooseImages"></image>
+    </view>
+    <view class="name">{{user.username}}</view>
+    <view class="age" s-if="age != ''">{{user.age}}岁</view>
+</view>
+<view class="body_content clearBoth">
+    <view class="float_left wrap left_wrap">
+        <view class="title">个人信息填写:</view>
+
+        <view class="input_wrap">
+            <view class="input_name">宝贝姓名:</view>
+            <input type="text" placeholder-class="pla" placeholder="请填写姓名" bindinput="setText" data-text="username" value="{{user.username}}"/>
+        </view>
+
+        <view class="input_wrap">
+            <view class="input_name">宝贝年龄:</view>
+            <input type="number" placeholder-class="pla" placeholder="请填写年龄" bindinput="setText" data-text="age" value="{{user.age}}"/>
+        </view>
+
+        <view class="input_wrap">
+            <view class="input_name">宝贝性别:</view>
+            <picker mode="selector" placeholder="请选择性别" value="{{gender}}" range="{{sex}}" bindchange="sexChange" title="请选择性别"></picker>
+            <view class="picker_name">{{gender == 1 ? '男' : '女'}}</view>    
+        </view>
+        
+        <view class="input_wrap">
+            <view class="input_name">出生日期:</view>
+            <picker mode="date" placeholder="请选择出生日期" value="{{birthday}}" bindchange="dataChange" title="请选择出生日期"></picker>
+            <view class="picker_name">{{birthday}}</view>    
+        </view>
+
+        <view class="input_wrap">
+            <view class="input_name">宝贝身高:</view>
+            <input type="text" placeholder-class="pla" placeholder="请填写身高（cm）" bindinput="setText" data-text="height" value="{{user.height}}"/>
+        </view>
+
+        <view class="input_wrap">
+            <view class="input_name">宝贝体重:</view>
+            <input type="text" placeholder-class="pla" placeholder="请填写体重（kg）" bindinput="setText" data-text="weight" value="{{user.weight}}"/>
+        </view>
+
+        <view class="input_wrap">
+            <view class="input_name">宝贝鞋码:</view>
+            <input type="text" placeholder-class="pla" placeholder="请填写鞋码" bindinput="setText" data-text="shoe_size" value="{{user.shoe_size}}"/>
+        </view>
+
+        <view class="input_wrap">
+            <view class="input_name">赛事组别:</view>
+            <input type="text" placeholder-class="pla" placeholder="请填写赛事组别" bindinput="setText" data-text="group" value="{{user.group}}"/>
+        </view>
+
+        <view class="input_wrap">
+            <view class="input_name">联系人:</view>
+            <input type="text" placeholder-class="pla" placeholder="请填写联系人"  bindinput="setText" data-text="linkman" value="{{user.linkman}}"/>
+        </view>
+
+        <view class="input_wrap">
+            <view class="input_name">电话号码:</view>
+            <input type="text" placeholder-class="pla" placeholder="请填写电话号码" bindinput="setText" data-text="mobile" value="{{user.mobile}}"/>
+        </view>
+    </view>
+    <view class="float_left wrap right_wrap">
+        <view class="title">比赛经历:</view>
+        <view class="saishi_wrap">
+            <textarea placeholder="请填写赛事经历" placeholder-class="pla" bindinput="setText" data-text="match" value="{{user.match}}"></textarea>
+        </view>
+    </view>
+</view>

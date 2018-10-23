@@ -1,0 +1,20 @@
+<view class="logo_img"></view>
+<swiper 
+    indicator-dots="false" 
+    autoplay="false" 
+    interval="3000" 
+    duration="500" 
+    indicator-color="rgba(255,255,255,1)" 
+    indicator-active-color="rgba(248,188,110,1)"
+    previous-margin="0.61rem"
+    next-margin="0.61rem"
+    circular="true"
+    bindchange="getDetail"
+    current="1">
+    <block s-for="item in imgs">
+        <swiper-item bindtap="bannerList">
+            <image data-id="{{item.id}}" src="{{item.pic}}" class="slide-image" width="100%" height="150"/>
+        </swiper-item>
+    </block>
+</swiper>
+<scroll-view scroll-y="true" class="content body_content">{{content}}</scroll-view>

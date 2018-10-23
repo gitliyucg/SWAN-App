@@ -1,0 +1,8 @@
+<view class="logo_img"></view>
+<view class="logo_bottom"></view>
+<view class="cont_title">精彩内容展示</view>
+<view class="img_wrap border_radius">
+    <image src="{{data['pic']}}"></image>
+</view>
+<view class="banner_wenben"></view>
+<view class="content_wrap border_radius">{{data['description']}}</view>

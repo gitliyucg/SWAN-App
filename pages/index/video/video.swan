@@ -1,0 +1,25 @@
+<scroll-view id="#scroll" scroll-y="true" bindscrolltolower="addList" style="height: {{scrollHeight}}px">
+    <view class="logo_img"></view>
+    <view class="logo_bottom"></view>
+    <view class="cont_title"><view class="content">全部视频   ></view></view>
+    <view class="video_wrap">
+        <view class="video_list clearBoth" s-for="item in data">
+            <view class="video1 float_left">
+                <image class="video_img" src="{{item[0][0]['pic']}}" data-video="{{item[0][0]['video_url']}}" bindtap="playVideo"></image>
+                <image class="video_play" src="../../../images/play.png" data-video="{{item[0][0]['video_url']}}" bindtap="playVideo"></image>
+                <view class="video_title">{{item[0][0]['title']}}</view>
+            </view>
+            <view class="video2 float_left">
+                <image class="video_img" src="{{item[0][1]['pic']}}" data-video="{{item[0][1]['video_url']}}" bindtap="playVideo"></image>
+                <image class="video_play" src="../../../images/play.png" data-video="{{item[0][1]['video_url']}}" bindtap="playVideo"></image>
+                <view class="video_title">{{item[0][1]['title']}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="video_play_wrap" s-if="isShow">
+        <video id="myde" src="{{video}}" 
+        loop="true"
+        autoplay="true"></video>
+        <icon type="close" size="40" class="icon_css" color="#fff" bindtap="closeVideo" />
+    </view>
+</scroll-view>

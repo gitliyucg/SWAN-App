@@ -1,0 +1,80 @@
+<view class="index_img_wrap">
+    <image src="{{logo}}"></image>
+</view>
+
+<!-- 轮播 -->
+<swiper 
+    indicator-dots="true" 
+    autoplay="true" 
+    interval="3000" 
+    duration="500" 
+    indicator-color="rgba(255,255,255,1)" 
+    indicator-active-color="rgba(248,188,110,1)">
+    <block s-for="item in imgs">
+        <swiper-item bindtap="bannerList">
+            <image data-id="{{item.id}}" src="{{item.pic}}" class="slide-image" width="100%" height="150"/>
+        </swiper-item>
+    </block>
+</swiper>
+
+<!-- 活动内容简介 -->
+<view class="index_margin brief">
+    <view class="border_title">活动内容简介</view>  
+    <view class="brief_wrap">
+        <view class="time brief_content_wrap" bindtap="toDetails">
+            <image src="../../images/time.png"></image>
+            <text>活动时间</text>
+        </view>
+        <view class="didian brief_content_wrap" bindtap="toDetails">
+            <image src="../../images/didian.png"></image>
+            <text>活动地点</text>
+        </view>
+        <view class="time brief_content_wrap" bindtap="toDetails">
+            <image src="../../images/xiangqing.png"></image>
+            <text>活动详情</text>
+        </view>
+        <view class="time brief_content_wrap" bindtap="toDetails">
+            <image src="../../images/phone.png"></image>
+            <text>热线电话</text>
+        </view>
+    </view>  
+</view>
+
+<!-- 模特矩阵 -->
+<view class="index_margin border_radius model_wrap">
+    <view class="title index_padd_auto">
+        <text>少儿模特矩阵</text>
+        <text>RAYLI CHILDREN MODEL CONTEST</text>
+    </view>
+    <image class="border_radius model_img" src="../../images/index_model.jpg" bindtap="toVideo"></image>
+    <image class="bottom_img" src="../../images/index_bottom.png"></image>
+</view>
+
+<!-- 课程展示 -->
+<view class="index_margin border_radius kecheng">
+    <view class="border_title">培训课程展示</view>
+    <view class="kecheng_wrap index_padd_auto">
+        <view class="image_wrap" s-for="kecheng">
+            <image src="{{item.pic}}"></image>
+        </view>
+    </view>
+    <image class="bottom_img" src="../../images/bottom.png"></image>
+</view>
+
+<!-- 报名咨询 -->
+<view class="index_margin border_radius baoming">
+    <view class="baoming_title">
+        <view class="border_left"></view>
+        <view class="content">报名咨询窗口</view>
+        <view class="border_right"></view>
+    </view>
+    <view class="zixun_chuangkou chaungkou" bindtap="toList" data-item="0"></view>
+    <view class="baoming_title">
+        <view class="border_left"></view>
+        <view class="content">其他内容</view>
+        <view class="border_right"></view>
+    </view>
+    <view class="qita chaungkou" bindtap="toList" data-item="1"></view>
+</view>
+
+<view style="width: 100%; height: 0.23rem;"></view>

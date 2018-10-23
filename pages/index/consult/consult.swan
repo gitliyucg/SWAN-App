@@ -1,0 +1,36 @@
+<view class="logo_img"></view>
+<view class="list_wrap">
+    <view class="body_content clearBoth">
+        <view class="float_left" s-for="item in imgs">
+            <image src="{{item.pic}}"></image>
+        </view>
+    </view>
+</view>
+<view class="buzhou_title">咨询步骤</view>
+<view class="body_content clearBoth buzhou_wrap">
+    <view class="wenzi_wrap float_left"></view>
+    <view class="next_wrap float_left">
+        <image src="../../../images/next.png"></image>   
+    </view>
+    <view class="wenzi_wrap float_left"></view>
+    <view class="next_wrap float_left">
+        <image src="../../../images/next.png"></image>
+    </view>
+    <view class="wenzi_wrap float_left"></view>
+    <view class="next_wrap float_left">
+        <image src="../../../images/next.png"></image>
+    </view>
+    <view class="wenzi_wrap float_left"></view>
+    <view class="next_wrap float_left">
+        <image src="../../../images/next.png"></image>
+    </view>
+    <view class="wenzi_wrap float_left"></view>
+</view>
+<view class="lianxi_wrap">
+    <view class="body_content">
+        <view class="lianxi_title">联系我们</view>
+        <view class="lianxi_content">联系方式：1111111</view>
+        <view class="lianxi_content">扫描二维码，关注公众号</view>
+        <view class="lianxi_content">人工服务</view>
+    </view>
+</view>

@@ -1,0 +1,222 @@
+html,body{
+	background-image: none !important;
+}
+
+/* 公共样式 */
+.border_title{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.14rem;
+	color: #fff;
+	padding: 0 0.1rem;
+	border-bottom: 1px solid #fff;
+}
+
+/* 顶部图片 */
+.index_img_wrap{
+	width: 100%;
+	height: .85rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.index_img_wrap image{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+}
+
+/* 轮播样式 */
+swiper{
+	width: 100%;
+	height: 1.83rem;
+	margin-top: 0.06rem; 
+} 
+
+swiper image{
+	width: 100%;
+	height: 1.83rem;
+}
+
+/* 活动内容简介 */
+.brief{
+	width: 100%;
+	height: 1.14rem;
+	background-image: url("../../images/back.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	border-radius: 0.2rem;
+}
+
+.brief_wrap{
+	width: 100%;
+	height: 0.72rem;
+	display: flex;
+}
+
+.brief_wrap .brief_content_wrap{
+	flex: 1;
+	/* width: 25%; */
+	height: 100%;
+	text-align: center;
+	line-height: 1
+}
+
+.brief_content_wrap image{
+	margin: 0 auto;
+	display: block;
+	vertical-align: top;
+	margin-top: 0.1rem;
+}
+
+.time image{
+	width: 0.35rem;
+	height: 0.35rem;
+}
+
+.didian image{
+	width: 0.22rem;
+	height: 0.35rem;
+}
+
+.brief_content_wrap text{
+	display: block;
+	font-size: 0.1rem;
+	color: #fff;
+	margin-top: 0.1rem;
+}
+
+/* 模特矩阵 */
+.model_wrap{
+	width: 100%;
+	height: 2.6333rem;
+	background-image: url("../../images/back.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+
+.model_wrap .title{
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	background: #d81b5f;
+	color: #fff;
+	font-size: 0.1rem; 
+	z-index: 2;
+}
+
+.model_wrap .title text:nth-child(2){
+	margin-left: 0.4rem;
+}
+
+.model_wrap .model_img{
+	position: absolute;
+	width: 100%;
+	height: 2.033rem;
+	z-index: 1;
+}
+
+.model_wrap .bottom_img{
+	width: 100%;
+	height: 0.82rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 0;
+}
+
+/* 课程展示 */
+.kecheng{
+	width: 100%;
+	height: 2.2rem;
+	background-image: url("../../images/back.jpg");
+	background-size: 100% auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.kecheng_wrap{
+	width: 100%;
+	height: 0.84rem;
+	margin-top: 0.2rem;
+	display: flex; 
+}
+
+.kecheng_wrap .image_wrap{
+	flex: 1;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 0.1rem;
+	margin-right: 0.03rem;
+}
+
+.kecheng_wrap .image_wrap:nth-child(3){
+	margin-right: 0;
+}
+
+.kecheng_wrap .image_wrap image{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.kecheng .bottom_img{
+	width: 100%;
+	height: 0.5rem;
+	/* vertical-align: top; */
+	position: absolute;
+	bottom: 0;
+}
+
+/* 报名咨询 */
+.baoming{
+	width: 100%;
+	height: 1.69rem;
+	background-image: url("../../images/back.jpg");
+	background-size: 100% auto;
+	overflow: hidden;
+}
+
+.baoming_title{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0;
+	display: flex;
+	padding: 0 0.08rem;
+}
+
+.baoming_title view{
+	flex: 1;
+}
+
+.baoming_title .content{
+	width: 0.86rem;
+	height: 0.16rem;
+	text-align: center;
+	line-height: 0.16rem;
+	font-size: 0.12rem;
+	color: #fff;
+	background: #ffd0a8;
+	margin: 0.13rem 0.32rem 0 0.32rem;
+}
+
+.baoming_title .border_left,.baoming_title .border_right{
+	width: 0.95rem;
+	height: 0.01rem;
+	background: #ffd0a8;
+	margin-top: 0.2rem;
+}
+
+.chaungkou{
+	width: 3.17rem;
+	height: 0.32rem;
+	margin: 0 auto;
+	border-radius: 0.1rem;
+	background: #ffdee7;
+}

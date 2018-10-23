@@ -1,0 +1,78 @@
+.list_wrap{
+    margin-top: 0.27rem;
+    width: 100%;
+}
+
+.list_wrap .body_content view{
+    width: 1.07rem;
+    height: 1.39rem;
+    background: #fff;
+    border-radius: 0.04rem;
+    margin-right: 0.02rem;
+    margin-bottom: 0.3rem;
+    position: relative
+}
+
+.list_wrap .body_content view image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.list_wrap .body_content view:nth-child(3n){
+    margin-right: 0;
+}
+
+.buzhou_title{
+    width: 100%;
+    text-align: center;
+    height: 0.2rem;
+    font-size: 0.14rem;
+    color: #fff;
+}
+
+.buzhou_wrap{
+    height: 0.17rem;
+}
+
+.wenzi_wrap{
+    width: 0.48rem;
+    height: 0.17rem;
+    background: #fff;
+}
+
+.next_wrap{
+    width: 0.21rem;
+    height: 100%;
+    text-align: center;
+}
+
+.next_wrap image{
+    width: 90%;
+    height: 0.05rem;
+    vertical-align: top;
+    margin-top: 0.06rem;
+}
+
+.lianxi_wrap{
+    width: 100%;
+    background: #fff;
+    margin: 0.16rem 0; 
+}
+
+.lianxi_title{
+    width: 100%;
+    height: 0.32rem;
+    font-size: 0.14rem;
+    text-align: center;
+    line-height: 0.32rem;
+    color: #5a5959;
+}
+
+.lianxi_content{
+    width: 100%;
+    height: 0.19rem;
+    color: #5a5959;
+    font-size: 0.1rem;
+}
